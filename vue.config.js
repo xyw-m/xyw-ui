@@ -4,10 +4,13 @@ function resolve (dir) {
 }
 
 module.exports = {
-  pages: {
-    index: 'examples/main.js',
-    template: 'public/index.html',
-    filename: 'index.html'
+  configureWebpack: {
+    resolve: {
+      extensions: ['js', 'vue', '.json'],
+      alias: {
+        '@components': resolve('examples/components')
+      }
+    }
   },
   chainWebpack: config => {
     config.module

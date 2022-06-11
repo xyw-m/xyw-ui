@@ -1,5 +1,5 @@
 <template>
-  <div ref="placeholderNode" :style="placeholderStyle" class="">
+  <div ref="placeholderNode" :style="placeholderStyle">
     <div ref="fixedNode" :style="affixStyle">
       <slot></slot>
     </div>
@@ -154,6 +154,19 @@ export default {
       }
       this.prepareMeasure()
     }
+  },
+  mounted () {
+    const { target } = this
+    if (target) {
+      this.timeout = setTimeout(() => {
+        addObserveTarget(target(), this)
+        this.updatePosition()
+      })
+    }
+  },
+  beforeDestroy () {
+    clearTimeout(this.timeout)
+    removeObserveTarget(this)
   }
 }
 </script>

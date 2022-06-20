@@ -8,7 +8,6 @@ module.exports = {
     resolve: {
       extensions: ['js', 'vue', '.json'],
       alias: {
-        '@components': resolve('examples/components')
       }
     }
   },

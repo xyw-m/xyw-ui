@@ -1,7 +1,9 @@
 import affix from './affix'
+import treeSelect from './treeSelect'
 
 const components = [
-  affix
+  affix,
+  treeSelect
 ]
 
 const install = function (Vue) {
@@ -17,5 +19,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  affix
+  affix,
+  treeSelect
 }

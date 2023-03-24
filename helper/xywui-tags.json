@@ -1,0 +1,10 @@
+{
+  "x-affix": {
+    "attributes": ["target", "offsetTop", "offsetBottom"],
+    "description": "an affix for DOM"
+  },
+  "x-tree-select": {
+    "attributes": ["value", "parentCode", "type", "width", "placement", "data", "treeConfig", "disabled", "title", "default-checked-keys", "onlyLeaf", "multiple", "filterSearch"],
+    "description": "tree select width detail panel"
+  }
+}

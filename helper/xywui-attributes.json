@@ -1,0 +1,49 @@
+{
+  "x-tree-select/parentCode": {
+    "description": "root node orgId, default:'0'"
+  },
+  "x-tree-select/type": {
+    "options": ["complex", "single"],
+    "description": "x-tree-select type, default: 'complex'"
+  },
+  "x-tree-select/width": {
+    "description": "panel width, accept: Number || String"
+  },
+  "x-tree-select/placement": {
+    "options": ["top", "top-start", "top-end", "bottom", "bottom-start", "bottom-end", "left", "left-start", "left-end", "right", "right-start", "right-end"],
+    "description": "panel placement, default: 'bottom-start'"
+  },
+  "x-tree-select/data": {
+    "description": "custom data for tree"
+  },
+  "x-tree-select/treeConfig": {
+    "description": "Object with prop: children, label, node-key, check-strictly, path-id, path-Label"
+  },
+  "x-tree-select/disabled": {
+    "description": "accept node array、node-key array or function"
+  },
+  "x-tree-select/title": {
+    "description": "title for x-tree-select, String"
+  },
+  "x-tree-select/default-checked-keys": {
+    "description": "accept default checked node keys array"
+  },
+  "x-tree-select/onlyLeaf": {
+    "description": "only checked leaf node, Boolean"
+  },
+  "x-tree-select/multiple": {
+    "description": "tree select multiple, Boolean"
+  },
+  "x-tree-select/filterSearch": {
+    "description": "filter search result, Boolean"
+  },
+  "x-affix/target": {
+    "description": "function that return target DOM, default target is window, Function"
+  },
+  "x-affix/offsetTop": {
+    "description": "top offset, default: 0, Number"
+  },
+  "x-affix/offsetBottom": {
+    "description": "bottom offset, default 0, Number"
+  }
+}

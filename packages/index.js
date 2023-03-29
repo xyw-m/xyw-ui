@@ -1,9 +1,11 @@
 import affix from './affix'
 import treeSelect from './treeSelect'
+import tagSelect  from './tagSelect'
 
 const components = [
   affix,
-  treeSelect
+  treeSelect,
+  tagSelect
 ]
 
 const install = function (Vue) {
@@ -20,5 +22,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   install,
   affix,
-  treeSelect
+  treeSelect,
+  tagSelect
 }

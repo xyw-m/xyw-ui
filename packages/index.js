@@ -1,11 +1,13 @@
 import affix from './affix'
 import treeSelect from './treeSelect'
 import tagSelect  from './tagSelect'
+import staffSelect from './staffSelect'
 
 const components = [
   affix,
   treeSelect,
-  tagSelect
+  tagSelect,
+  staffSelect
 ]
 
 const install = function (Vue) {
@@ -23,5 +25,6 @@ export default {
   install,
   affix,
   treeSelect,
-  tagSelect
+  tagSelect,
+  staffSelect
 }
